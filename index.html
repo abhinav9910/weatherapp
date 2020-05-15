@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Weather App</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<header>Check Weather of Your Area!!</header>
+		<div class="app-container">
+			<div class="search-city">
+				<input
+					type="text"
+					autocomplete="off"
+					class="search-box"
+					placeholder="Search for a city..."
+				/>
+			</div>
+			<main>
+				<section class="location">
+					<div class="city"></div>
+					<canvas
+						class="weather-icon"
+						width="128"
+						height="128"
+					></canvas>
+					<div class="date"></div>
+				</section>
+				<div class="current">
+					<div class="temp"><span></span></div>
+					<div class="weather"></div>
+					<div class="hi-low"></div>
+				</div>
+			</main>
+		</div>
+		<footer>
+			<div class="api-fetch">
+				Powered by&nbsp&nbsp
+				<div class="api-link">
+					<a
+						href="https://www.weatherapi.com/"
+						title="Free Weather API"
+						>WeatherAPI.com</a
+					>
+				</div>
+				<div class="api-img">
+					<a
+						href="https://www.weatherapi.com/"
+						title="Free Weather API"
+						><img
+							src="//cdn.weatherapi.com/v4/images/weatherapi_logo.png"
+							alt="Weather data by WeatherAPI.com"
+							border="0"
+					/></a>
+				</div>
+			</div>
+		</footer>
+
+		<script src="./skycons.js"></script>
+		<script src="./script.js"></script>
+	</body>
+</html>
